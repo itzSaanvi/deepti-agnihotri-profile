@@ -7,150 +7,211 @@
 
 <title>Dr. Deepti Agnihotri | Professional Profile</title>
 
+<meta name="description" content="Professional profile of Dr. Deepti Agnihotri, Assistant Superintending Archaeologist at the Archaeological Survey of India.">
+
 <style>
+
+/* GENERAL SETTINGS */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Georgia, "Times New Roman", serif;
-    background: #F7F3EA;
-    color: #263248;
+    background: #F0DFCA;
+    color: #40332C;
     line-height: 1.8;
 }
 
 /* HEADER */
 
 header {
-    background: #173D78;
-    color: white;
+    background: #A34F38;
+    color: #FFF9F0;
     text-align: center;
-    padding: 35px 15px;
-    border-bottom: 5px solid #C6A45C;
+    padding: 38px 15px;
+    border-bottom: 5px solid #E8D7B9;
 }
 
 header h1 {
-    font-size: 34px;
+    font-size: 36px;
     letter-spacing: 1px;
+    margin-bottom: 5px;
 }
 
 header p {
-    font-size: 16px;
-    margin-top: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #F4E6D4;
 }
 
-/* NAVIGATION */
+/* NAVIGATION BAR */
 
 nav {
-    background: #102F60;
+    background: #783D2D;
     text-align: center;
-    padding: 14px;
+    padding: 15px 10px;
+    border-bottom: 3px solid #E8D7B9;
 }
 
 nav a {
-    color: white;
+    display: inline-block;
+    color: #FFF9F0;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 15px;
+    margin: 5px 15px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #E7C77D;
+    color: #E8D7B9;
 }
 
-/* MAIN PROFILE */
+/* MAIN CONTAINER */
 
 .container {
     max-width: 1150px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 
-.profile {
+/* FULL-WIDTH PROFILE BANNER */
+
+.profile-banner {
     display: flex;
     align-items: center;
     gap: 40px;
-    background: white;
-    padding: 30px;
-    border: 1px solid #D9D1C1;
-    border-left: 6px solid #C6A45C;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    background: #F8EFE2;
+    padding: 35px;
+    border: 1px solid #D9C4A8;
+    border-top: 5px solid #B08D57;
+    box-shadow: 0 5px 20px rgba(70, 45, 30, 0.10);
+    border-radius: 5px;
 }
 
-.profile img {
-    width: 300px;
-    height: 370px;
+.profile-banner img {
+    width: 260px;
+    height: 310px;
     object-fit: cover;
-    border: 5px solid #E8DFC9;
+    object-position: center;
+    border: 5px solid #E8D7B9;
+    border-radius: 4px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+.profile-text {
+    flex: 1;
 }
 
 .profile-text h2 {
-    color: #173D78;
-    font-size: 30px;
+    color: #783D2D;
+    font-size: 32px;
     margin-bottom: 8px;
 }
 
-.designation {
-    color: #9A762D;
-    font-weight: bold;
-    font-size: 18px;
+.profile-text h3 {
+    color: #A34F38;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    margin-bottom: 8px;
 }
 
-.organisation {
-    color: #173D78;
-    font-size: 17px;
+.profile-text .organisation {
+    color: #76523D;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
     margin-bottom: 18px;
 }
 
-/* SECTIONS */
+.profile-text p {
+    font-size: 16px;
+}
 
-section {
-    background: white;
-    margin-top: 30px;
+/* CONTENT SECTIONS */
+
+.section {
+    background: #FFFDF9;
+    margin-top: 28px;
     padding: 30px;
-    border: 1px solid #E1D9CA;
-    border-top: 4px solid #173D78;
+    border: 1px solid #E3D1B8;
+    border-left: 5px solid #A34F38;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(70, 45, 30, 0.06);
+    scroll-margin-top: 25px;
 }
 
-section h2 {
-    color: #173D78;
+.section h2 {
+    color: #783D2D;
     font-size: 25px;
-    margin-bottom: 15px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #D8C79F;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #E8D7B9;
 }
 
-section ul {
-    padding-left: 25px;
-}
-
-section li {
+.section h3 {
+    color: #A34F38;
+    font-size: 18px;
+    margin-top: 20px;
     margin-bottom: 8px;
 }
 
+.section p {
+    font-size: 16px;
+    color: #51443B;
+}
+
+.section ul {
+    padding-left: 25px;
+}
+
+.section li {
+    margin-bottom: 9px;
+    color: #51443B;
+}
+
 .highlight {
-    color: #173D78;
+    color: #783D2D;
     font-weight: bold;
+}
+
+/* DECORATIVE DIVIDER */
+
+.decorative-line {
+    width: 75px;
+    height: 3px;
+    background: #B08D57;
+    margin: 12px 0 20px;
 }
 
 /* FOOTER */
 
 footer {
-    background: #173D78;
-    color: white;
+    background: #783D2D;
+    color: #FFF9F0;
     text-align: center;
-    padding: 22px;
+    padding: 28px 15px;
     margin-top: 45px;
-    border-top: 4px solid #C6A45C;
+    border-top: 5px solid #E8D7B9;
 }
 
 footer p {
-    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin: 4px 0;
 }
 
-/* MOBILE VIEW */
+/* MOBILE RESPONSIVE DESIGN */
 
 @media (max-width: 750px) {
 
@@ -158,36 +219,60 @@ footer p {
         font-size: 27px;
     }
 
-    nav a {
-        display: inline-block;
-        margin: 5px 8px;
+    header p {
+        font-size: 10px;
+        letter-spacing: 2px;
     }
 
-    .profile {
+    nav a {
+        margin: 6px 8px;
+        font-size: 12px;
+    }
+
+    .profile-banner {
         flex-direction: column;
         text-align: center;
+        padding: 25px 18px;
+        gap: 22px;
     }
 
-    .profile img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
+    .profile-banner img {
+        width: 230px;
+        height: 280px;
+        max-width: 100%;
     }
 
-    section {
-        padding: 20px;
+    .profile-text h2 {
+        font-size: 26px;
+    }
+
+    .section {
+        padding: 22px;
+    }
+
+    .section h2 {
+        font-size: 22px;
+    }
+
+    .decorative-line {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
     <h1>Dr. Deepti Agnihotri</h1>
-    <p>Professional Profile</p>
-    <p>Archaeological Survey of India</p>
+    <p>ARCHAEOLOGY | HERITAGE | RESEARCH</p>
 </header>
+
+<!-- NAVIGATION -->
 
 <nav>
     <a href="#about">Biography</a>
@@ -196,11 +281,11 @@ footer p {
     <a href="#achievements">Achievements</a>
 </nav>
 
-<div class="container">
+<main class="container">
 
-    <!-- PROFILE -->
+    <!-- PROFILE BANNER -->
 
-    <div class="profile">
+    <section class="profile-banner" id="about">
 
         <img src="deepti.jpg"
              alt="Photograph of Dr. Deepti Agnihotri">
@@ -209,9 +294,7 @@ footer p {
 
             <h2>Dr. Deepti Agnihotri</h2>
 
-            <p class="designation">
-                Assistant Superintending Archaeologist
-            </p>
+            <h3>Assistant Superintending Archaeologist</h3>
 
             <p class="organisation">
                 Archaeological Survey of India (ASI)
@@ -225,14 +308,16 @@ footer p {
             </p>
 
         </div>
-    </div>
 
+    </section>
 
-    <!-- BIOGRAPHY -->
+    <!-- PROFESSIONAL BIOGRAPHY -->
 
-    <section id="about">
+    <section class="section">
 
         <h2>Professional Biography</h2>
+
+        <div class="decorative-line"></div>
 
         <p>
             Dr. Deepti Agnihotri is an archaeologist serving
@@ -240,19 +325,19 @@ footer p {
             in the Archaeological Survey of India.
 
             With 21 years of professional experience,
-            her work encompasses excavation, exploration
-            and epigraphy, contributing to the study
-            and understanding of India's archaeological heritage.
+            her areas of work include excavation,
+            exploration and epigraphy.
         </p>
 
     </section>
 
-
     <!-- PROFESSIONAL EXPERIENCE -->
 
-    <section id="experience">
+    <section class="section" id="experience">
 
         <h2>Professional Experience</h2>
+
+        <div class="decorative-line"></div>
 
         <ul>
 
@@ -281,62 +366,65 @@ footer p {
 
     </section>
 
-
     <!-- RESEARCH AND PUBLICATIONS -->
 
-    <section id="research">
+    <section class="section" id="research">
 
-        <h2>Research and Publications</h2>
+        <h2>Research & Publications</h2>
+
+        <div class="decorative-line"></div>
+
+        <h3>Research Work</h3>
 
         <p>
-            Her academic and research contributions include
-            work relating to the Satavahana period,
-            inscriptions and archaeological studies.
+            Her research work includes studies relating
+            to the Satavahana period and epigraphic
+            evidence, including the status of women
+            during the Satavahana period.
         </p>
-
-        <h3>Research</h3>
-
-        <ul>
-            <li>
-                Research paper on the status of women
-                during the Satavahana period, based on
-                epigraphic evidence.
-            </li>
-        </ul>
 
         <h3>Books and Publications</h3>
 
         <ul>
+
             <li>
-                Author of books relating to the Satavahana
-                period and historical subjects.
+                Has written or contributed to books
+                relating to the Satavahana period
+                and historical subjects.
             </li>
+
             <li>
                 Has published research articles.
             </li>
+
         </ul>
 
-        <h3>Academic Participation</h3>
+        <h3>Conferences and Workshops</h3>
 
         <ul>
+
             <li>
-                Participated in Indian Archaeological
-                Society conferences.
+                Participated in conferences of the
+                Indian Archaeological Society.
             </li>
+
             <li>
-                Participated in regional workshops relating
-                to excavation and long-term excavation projects.
+                Participated in regional workshops
+                relating to excavation and long-term
+                excavation projects.
             </li>
+
         </ul>
 
     </section>
 
-
     <!-- ACHIEVEMENTS -->
 
-    <section id="achievements">
+    <section class="section" id="achievements">
 
         <h2>Achievements</h2>
+
+        <div class="decorative-line"></div>
 
         <ul>
 
@@ -346,27 +434,25 @@ footer p {
             </li>
 
             <li>
-                Successfully obtained all three certificates
-                of the National Cadet Corps (NCC):
-                A Certificate, B Certificate and C Certificate.
+                Obtained all three certificates of the
+                National Cadet Corps (NCC):
+                A Certificate, B Certificate and
+                C Certificate.
             </li>
 
         </ul>
 
     </section>
 
-</div>
+</main>
 
+<!-- FOOTER -->
 
 <footer>
 
-    <p>
-        Professional Profile of Dr. Deepti Agnihotri
-    </p>
+    <p>Professional Profile of Dr. Deepti Agnihotri</p>
 
-    <p>
-        Archaeological Survey of India
-    </p>
+    <p>Archaeology | Heritage | Research</p>
 
 </footer>
 
