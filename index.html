@@ -2,92 +2,372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dr. Deepti Agnihotri | Professional Profile</title>
+<title>Dr. Deepti Agnihotri | Professional Profile</title>
 
-    <meta name="description" content="Professional profile of Dr. Deepti Agnihotri, Archaeological Survey of India.">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f1e9;
-            color: #292929;
-            text-align: center;
-        }
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #F7F3EA;
+    color: #263248;
+    line-height: 1.8;
+}
 
-        header {
-            background: #263b50;
-            color: white;
-            padding: 35px 15px;
-        }
+/* HEADER */
 
-        h1 {
-            font-size: 34px;
-        }
+header {
+    background: #173D78;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    border-bottom: 5px solid #C6A45C;
+}
 
-        .profile {
-            background: white;
-            max-width: 750px;
-            margin: 40px auto;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px #0002;
-        }
+header h1 {
+    font-size: 34px;
+    letter-spacing: 1px;
+}
 
-        .profile img {
-            width: 230px;
-            height: 270px;
-            object-fit: cover;
-            border-radius: 12px;
-        }
+header p {
+    font-size: 16px;
+    margin-top: 5px;
+}
 
-        h2 {
-            color: #263b50;
-        }
+/* NAVIGATION */
 
-        footer {
-            background: #263b50;
-            color: white;
-            padding: 20px;
-        }
-    </style>
+nav {
+    background: #102F60;
+    text-align: center;
+    padding: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #E7C77D;
+}
+
+/* MAIN PROFILE */
+
+.container {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border: 1px solid #D9D1C1;
+    border-left: 6px solid #C6A45C;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.profile img {
+    width: 300px;
+    height: 370px;
+    object-fit: cover;
+    border: 5px solid #E8DFC9;
+}
+
+.profile-text h2 {
+    color: #173D78;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.designation {
+    color: #9A762D;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.organisation {
+    color: #173D78;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+/* SECTIONS */
+
+section {
+    background: white;
+    margin-top: 30px;
+    padding: 30px;
+    border: 1px solid #E1D9CA;
+    border-top: 4px solid #173D78;
+}
+
+section h2 {
+    color: #173D78;
+    font-size: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D8C79F;
+}
+
+section ul {
+    padding-left: 25px;
+}
+
+section li {
+    margin-bottom: 8px;
+}
+
+.highlight {
+    color: #173D78;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    background: #173D78;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 45px;
+    border-top: 4px solid #C6A45C;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 750px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
     <h1>Dr. Deepti Agnihotri</h1>
-    <p>Archaeology | Heritage | Research</p>
+    <p>Professional Profile</p>
+    <p>Archaeological Survey of India</p>
 </header>
 
-<div class="profile">
+<nav>
+    <a href="#about">Biography</a>
+    <a href="#experience">Experience</a>
+    <a href="#research">Research & Publications</a>
+    <a href="#achievements">Achievements</a>
+</nav>
 
-   <img src="deepti.jpg"
-         alt="Photograph of Dr. Deepti Agnihotri">
+<div class="container">
 
-    <h2>About Dr. Deepti Agnihotri</h2>
+    <!-- PROFILE -->
 
-    <p>
-        Dr. Deepti Agnihotri is an archaeologist
-        associated with the Archaeological Survey
-        of India (ASI).
-    </p>
+    <div class="profile">
 
-    <h2>Professional Profile</h2>
+        <img src="deepti.jpg"
+             alt="Photograph of Dr. Deepti Agnihotri">
 
-    <p>
-        This section will contain her verified
-        professional qualifications, designations,
-        research interests and achievements.
-    </p>
+        <div class="profile-text">
+
+            <h2>Dr. Deepti Agnihotri</h2>
+
+            <p class="designation">
+                Assistant Superintending Archaeologist
+            </p>
+
+            <p class="organisation">
+                Archaeological Survey of India (ASI)
+            </p>
+
+            <p>
+                An archaeologist with 21 years of professional
+                experience in the field of archaeology.
+                Her areas of work include excavation,
+                exploration and epigraphy.
+            </p>
+
+        </div>
+    </div>
+
+
+    <!-- BIOGRAPHY -->
+
+    <section id="about">
+
+        <h2>Professional Biography</h2>
+
+        <p>
+            Dr. Deepti Agnihotri is an archaeologist serving
+            as an Assistant Superintending Archaeologist
+            in the Archaeological Survey of India.
+
+            With 21 years of professional experience,
+            her work encompasses excavation, exploration
+            and epigraphy, contributing to the study
+            and understanding of India's archaeological heritage.
+        </p>
+
+    </section>
+
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+
+    <section id="experience">
+
+        <h2>Professional Experience</h2>
+
+        <ul>
+
+            <li>
+                Joined the Archaeological Survey of India
+                in <span class="highlight">2005</span>.
+            </li>
+
+            <li>
+                Began her professional career as
+                Assistant Archaeologist.
+            </li>
+
+            <li>
+                Currently serving as
+                Assistant Superintending Archaeologist.
+            </li>
+
+            <li>
+                Worked on report writing relating to
+                the archaeological sites of Rakhigarhi
+                and Bhita.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- RESEARCH AND PUBLICATIONS -->
+
+    <section id="research">
+
+        <h2>Research and Publications</h2>
+
+        <p>
+            Her academic and research contributions include
+            work relating to the Satavahana period,
+            inscriptions and archaeological studies.
+        </p>
+
+        <h3>Research</h3>
+
+        <ul>
+            <li>
+                Research paper on the status of women
+                during the Satavahana period, based on
+                epigraphic evidence.
+            </li>
+        </ul>
+
+        <h3>Books and Publications</h3>
+
+        <ul>
+            <li>
+                Author of books relating to the Satavahana
+                period and historical subjects.
+            </li>
+            <li>
+                Has published research articles.
+            </li>
+        </ul>
+
+        <h3>Academic Participation</h3>
+
+        <ul>
+            <li>
+                Participated in Indian Archaeological
+                Society conferences.
+            </li>
+            <li>
+                Participated in regional workshops relating
+                to excavation and long-term excavation projects.
+            </li>
+        </ul>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+
+    <section id="achievements">
+
+        <h2>Achievements</h2>
+
+        <ul>
+
+            <li>
+                Gold Medalist in M.A. from
+                <span class="highlight">Lucknow University</span>.
+            </li>
+
+            <li>
+                Successfully obtained all three certificates
+                of the National Cadet Corps (NCC):
+                A Certificate, B Certificate and C Certificate.
+            </li>
+
+        </ul>
+
+    </section>
 
 </div>
 
+
 <footer>
-    <p>Professional Profile | Dr. Deepti Agnihotri</p>
+
+    <p>
+        Professional Profile of Dr. Deepti Agnihotri
+    </p>
+
+    <p>
+        Archaeological Survey of India
+    </p>
+
 </footer>
 
 </body>
